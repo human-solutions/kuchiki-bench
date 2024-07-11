@@ -1,0 +1,23 @@
+[package]
+name = "kuchiki-bench"
+version = "0.1.0"
+edition = "2021"
+
+[[bench]]
+harness = false
+name = "selectors"
+
+[[bench]]
+harness = false
+name = "parsing"
+
+[[bench]]
+harness = false
+name = "iteration"
+
+[dependencies]
+html5ever = "0.27.0"
+kuchiki = "0.8.1"
+
+[dev-dependencies]
+criterion = { version = "0.5.1", features = ["html_reports"] }
