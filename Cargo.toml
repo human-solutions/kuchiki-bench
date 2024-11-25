@@ -15,6 +15,10 @@ name = "parsing"
 harness = false
 name = "iteration"
 
+[[bench]]
+harness = false
+name = "writing"
+
 [dependencies]
 html5ever = "0.27.0"
 kuchiki = "0.8.1"

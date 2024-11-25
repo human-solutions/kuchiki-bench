@@ -12,6 +12,10 @@ impl HtmlDoc {
         HtmlDoc { doc }
     }
 
+    pub fn write(&self) -> String {
+        self.doc.to_string()
+    }
+
     // pub fn select(&self, selectors) {
     //     self.doc.select("div")
     // }
